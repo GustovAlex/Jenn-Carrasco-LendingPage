@@ -1,0 +1,318 @@
+.home {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background: no-repeat center top url("../../assets/bg.png");
+	height: 1020px;
+	width: 100vw;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.homeSecondBackground {
+	background: no-repeat center bottom url("../../assets/portret.png");
+	height: 1020px;	
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	width: 1440px;
+	margin: 0 auto;
+	padding-top: 35px;
+	color: #fff;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.navbarLogo {
+	font-family: 'Allura', cursive;
+	font-size: 40px;
+}
+
+.navbarMenu {
+	font-size: 24px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navbarMenuBurger {
+	display: none;
+}
+
+.burgerBtn {
+	display: none;
+}
+
+.navbarMenuItem {
+	margin-left: 60px;
+	text-transform: uppercase;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	
+	padding-bottom: 3px;
+	background-image: linear-gradient(#fff, #fff);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: background-size 0.3s;
+}
+
+.navbarMenuItem:hover {
+	background-size: 100% 3px;
+}
+
+.homeTitle {
+	color: #fff;
+	font-size: 72px;
+	margin-top: 350px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.homeText {
+	color: #fff;
+	font-size: 60px;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+}
+
+.homeButton {
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 50px;
+	display: inline-block;
+	padding: 20px 40px;
+	background-color: #eebe8d;
+	color: #262626;
+	text-transform: uppercase;
+	text-decoration: none;
+	outline: none;
+	transition: background-color .2s ease-in;
+}
+
+.homeButton:hover {
+	background-color: #bf9870;
+}
+
+
+/* for 980px */
+
+@media screen and (max-width: 980px) {
+	.home {
+		height: 100vh;
+	}
+
+	.homeTitle {
+		font-size: 60px;
+		margin-top: 250px;
+	}
+
+	.navbarLogo {
+		font-size: 40px;
+	}
+
+	.navbarMenuItem {
+		margin-left: 30px;
+		padding-top: 5px;
+	}
+
+	.navbar {
+		padding-top: 30px;
+	}
+
+	.homeText {
+		font-size: 50px;
+		letter-spacing: 6px;
+	}
+}
+
+/* for 800px */
+
+@media screen and (max-width: 800px) {
+	.navbarMenuItem {
+		display: none;
+	}
+
+	.iconCloseBurgerMenu {
+		display: block;
+		height: 30px;
+		width: 30px;
+		margin: 20px auto 0 auto;
+	}
+
+	.burgerBtn {
+		display: block;
+		width: 40px;
+		height: 40px;
+		position: relative;
+		background-color: #fff;
+		cursor: pointer;
+		transition: all .2s ease-in-out;
+	}
+	
+	.burgerBtn:hover {
+		background-color: rgb(238, 238, 238);
+	}
+
+	.burgerBtn span {
+		content: '';
+		position: absolute;
+		top: 18px;
+		left: 5px;
+		width: 30px;
+		background-color: black;
+		height: 3px;
+	}
+
+	.burgerBtn::before {
+		content: '';
+		position: absolute;
+		top: 7px;
+		left: 5px;
+		width: 30px;
+		background-color: black;
+		height: 3px;
+	}
+
+	.burgerBtn::after {
+		content: '';
+		position: absolute;
+		bottom: 7px;
+		left: 5px;
+		width: 30px;
+		background-color: black;
+		height: 3px;
+	}
+
+	.burgerBtnNotVisible {
+		display: none;
+	}
+
+	.navbarMenu {
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		position: absolute;
+		right: 0;
+		top: 30px;
+	}
+
+	.navbarMenuItemBurger {	
+		font-size: 18px;
+		margin: 10px 30px;
+		text-transform: uppercase;
+		text-decoration: none;
+		outline: none;
+		color: #262626;
+		
+		padding-bottom: 3px;
+		background-image: linear-gradient(#262626, #262626);
+		background-position: 0% 100%;
+		background-repeat: no-repeat;
+		background-size: 0% 3px;
+		transition: background-size 0.3s;
+	}
+
+	.navbarMenuItemBurger:hover {
+		background-size: 100% 3px;
+	}
+
+	.homeTitle {
+		font-size: 48px;
+		margin-top: 200px;
+	}
+
+	.homeText {
+		font-size: 36px;
+		letter-spacing: 6px;
+	}
+
+	.navbarLogo {
+		font-size: 36px;
+	}
+}
+
+/* for 640px */
+
+@media screen and (max-width: 640px) {
+
+	.homeTitle {
+		font-size: 36px;
+		margin-top: 170px;
+	}
+
+	.homeText {
+		font-size: 24px;
+		letter-spacing: 6px;
+	}
+
+	.navbarLogo {
+		font-size: 36px;
+	}
+
+	.homeButton {
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: 150px;
+		display: inline-block;
+		padding: 15px 30px;
+	}
+}
+
+/* for 480px */
+
+@media screen and (max-width: 480px) {
+
+	.homeTitle {
+		font-size: 27px;
+		margin-top: 160px;
+	}
+
+	.homeText {
+		font-size: 15px;
+		letter-spacing: 6px;
+	}
+
+	.navbarLogo {
+		font-size: 30px;
+	}
+
+	.homeButton {
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: 170px;
+		display: inline-block;
+		padding: 15px 30px;
+	}
+}
+
+/* for 320px */
+
+@media screen and (max-width: 320px) {
+
+	.homeTitle {
+		font-size: 20px;
+		margin-top: 160px;
+	}
+
+	.homeText {
+		font-size: 12px;
+		letter-spacing: 4px;
+	}
+
+	.navbarLogo {
+		font-size: 30px;
+	}
+
+	.homeButton {
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: 180px;
+		display: inline-block;
+		padding: 15px 30px;
+	}
+}
+

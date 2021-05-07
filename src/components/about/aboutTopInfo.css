@@ -1,0 +1,141 @@
+.aboutTopInfo {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin: 0 auto;
+	width: 100vw;
+}
+
+.aboutTopInfoItems {
+	display: flex;
+	justify-content: center;
+	width: 34%;
+	color: #fff;
+	padding: 100px 0;
+}
+
+.aboutTopInfoItems:nth-child(1) {
+	background-color: #996c68;
+}
+
+.aboutTopInfoItems:nth-child(2) {
+	background-color: #805551;
+}
+
+.aboutTopInfoItems:nth-child(3) {
+	background-color: #6e4541;
+}
+
+.aboutTopInfoImgWrap {
+	height: 100px;
+	width: 100px;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 10px solid #eebe8d;
+	text-align: center;
+	align-items: center;
+	margin-right: 30px;
+	transition: all .3s ease-in-out;
+}
+
+.aboutTopInfoImgWrap:hover {
+	border: 10px solid #bf9870;
+	background-color: #e4e4e4;
+}
+
+.aboutTopInfoImg {
+	margin-top: 12px;
+	height: 51px;
+	width: 51px;
+}
+
+.aboutTopInfoTitle {
+	font-family: 'Oswald', sans-serif;
+	margin-top: 10px;
+	text-align: start;
+	font-size: 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+
+/* for 1300px */
+
+@media screen and (max-width: 1300px) {
+	.aboutTopInfoTitle {
+		font-size: 24px;
+	}
+}
+
+/* for 1200px */
+
+@media screen and (max-width: 1200px) {
+	.aboutTopInfoTitle {
+		font-size: 22px;
+	}
+}
+
+/* for 1050px */
+
+@media screen and (max-width: 1050px) {
+
+	.aboutTopInfoItems {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.aboutTopInfoImgWrap {
+		margin-right: 0px;
+	}
+
+	.aboutTopInfoTitle {
+		font-size: 22px;
+		text-align: center;
+	}
+}
+
+/* for 700px */
+
+@media screen and (max-width: 700px) {
+	.aboutTopInfoTitle {
+		font-size: 24px;
+		text-align: center;
+	}
+}
+
+/* for 600px */
+
+@media screen and (max-width: 600px) {
+	.aboutTopInfoTitle {
+		font-size: 16px;
+		text-align: center;
+	}
+}
+
+/* for 510px */
+
+@media screen and (max-width: 510px) {
+	.aboutTopInfo {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 0 auto;
+		width: 100vw;
+	}
+
+	.aboutTopInfoItems {
+		padding: 50px 0;
+		width: 100vw;
+	}
+
+	.aboutTopInfoTitle {
+		font-size: 20px;
+		text-align: center;
+	}
+}
+
+
+
+
+

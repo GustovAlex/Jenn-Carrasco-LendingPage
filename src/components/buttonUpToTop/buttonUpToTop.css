@@ -1,0 +1,38 @@
+.buttonUpToTop,
+.buttonUpToTopImg {
+	position: fixed;
+	z-index: 4;
+}
+
+.buttonUpToTop {
+	display: inline-block;
+	bottom: 50px;
+	right: 50px;
+	height: 80px;
+	width: 80px;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 5px solid #eebe8d;
+	
+}
+
+.buttonUpToTopImg:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.buttonUpToTopImg {
+	height: 50px;
+	width: 50px;
+	bottom: 65px;
+	right: 65px;
+	transition: all .3s ease-in-out;
+}
+
+/* for 580px */
+
+@media screen and (max-width: 580px) {
+	.buttonDisplayNone {
+		display: none;
+	}
+}

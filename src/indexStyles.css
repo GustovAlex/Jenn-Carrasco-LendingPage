@@ -1,0 +1,15 @@
+* {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.app {
+	
+	text-align: center;
+	color: #262626;
+  }
+
+  /* font-family: 'Montserrat', sans-serif;
+	font-family: 'Oswald', sans-serif; */
