@@ -3,16 +3,14 @@
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	background: no-repeat center top url("../../assets/bg.png");
-	height: 1020px;
+	background: no-repeat center top url("../../assets/bg1.png");
+	background-size: cover;
 	width: 100vw;
-	overflow: hidden;
 	box-sizing: border-box;
 }
 
 .homeSecondBackground {
-	background: no-repeat center bottom url("../../assets/portret.png");
-	height: 1020px;	
+	padding-bottom: 200px;
 }
 
 .navbar {
@@ -101,8 +99,9 @@
 /* for 980px */
 
 @media screen and (max-width: 980px) {
-	.home {
-		height: 100vh;
+
+	.homeSecondBackground {
+		padding-bottom: 200px;
 	}
 
 	.homeTitle {
@@ -239,6 +238,10 @@
 
 @media screen and (max-width: 640px) {
 
+	.homeSecondBackground {
+		padding-bottom: 150px;
+	}
+
 	.homeTitle {
 		font-size: 36px;
 		margin-top: 170px;
@@ -266,6 +269,10 @@
 
 @media screen and (max-width: 480px) {
 
+	.homeSecondBackground {
+		padding-bottom: 100px;
+	}
+
 	.homeTitle {
 		font-size: 27px;
 		margin-top: 160px;
@@ -292,6 +299,10 @@
 /* for 320px */
 
 @media screen and (max-width: 320px) {
+
+	.homeSecondBackground {
+		padding-bottom: 70px;
+	}
 
 	.homeTitle {
 		font-size: 20px;

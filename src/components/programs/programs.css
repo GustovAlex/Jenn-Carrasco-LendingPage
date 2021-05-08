@@ -1,11 +1,12 @@
 .programs {
-	background: no-repeat center top url("../../assets/programsBg.png");
-	height: 881px;
-	overflow: hidden;
+	background: no-repeat center top url("../../assets/programsBg1.png");
+	background-size: cover;
+	width: 100vw;
 }
 
 .programsWrap {
 	width: 1440px;
+	padding-bottom: 100px;
 	display: flex;
 	justify-content: space-between;
 	color: #fff;
@@ -15,13 +16,16 @@
 
 .programsInfo {
 	margin-top: 120px;
-	width: 70%;
 }
 
 .programsInfoItem {
 	display: flex;
 	justify-content: flex-start;
 	margin-bottom: 50px;
+}
+
+.programsInfoItemContent {
+	width: 50%;
 }
 
 .programsInfoTitle,
@@ -37,6 +41,7 @@
 	font-size: 48px;
 	text-transform: uppercase;
 	margin-bottom: 30px;
+	margin-left: 15px;
 	width: 762px;
 
 	padding-bottom: 3px;
@@ -60,6 +65,8 @@
 
 .programsInfoText {
 	margin-bottom: 70px;
+	margin-left: 15px;
+	width: 762px;
 }
 
 .programsInfoItemTitle {
@@ -69,6 +76,8 @@
 
 
 .programsInfoItemIcon {
+	display: inline-block;
+	box-sizing: border-box;
 	height: 100px;
 	width: 100px;
 	background-color: #fff;
@@ -78,6 +87,7 @@
 	align-items: center;
 	margin-right: 30px;
 	transition: all .3s ease-in-out;
+	margin-left: 15px;
 }
 
 .programsInfoItemIcon:hover {
@@ -91,40 +101,17 @@
 	width: 51px;
 }
 
-.programsPortret {
-	margin-top: 108px;
-}
-
-/* for 1300px */
-
-@media screen and (max-width: 1300px) {
-	.programs {
-		position: relative;
-	}
-
-	.programsPortret {
-		position: absolute;
-		bottom: -70px;
-		right: 0;
-		height: 100vh;
-	}
-}
-
 /* for 1180px */
 
 @media screen and (max-width: 1180px) {
-	.programs {
-	
-		height: 100vh;
-		overflow: hidden;
-	}
 
-	.programsPortret {
-		position: absolute;
-		z-index: 1;
-		bottom: -70px;
-		right: 0;
-		height: 90vh;
+	.programsInfoItemContent {
+		width: 70%;
+	}
+	
+	.programsWrap {
+		width: 100vw;
+		padding-bottom: 80px;
 	}
 
 	.programsInfoTitle {
@@ -135,13 +122,13 @@
 
 	.programsInfo {
 		margin-top: 70px;
-		width: 60%;
 	}
 
 	.programsInfoText {
 		font-family: 'Montserrat', sans-serif;
 		font-size: 15px;
 		padding: 0 15px;
+		margin: 0 auto;
 	}
 
 	.programsInfoItemTitle,
@@ -170,13 +157,9 @@
 /* for 1100px */
 
 @media screen and (max-width: 1100px) {
-	.programsPortret {
-		display: none;
-	}
-
 	.programsInfo {
 		margin-top: 70px;
-		width: 100vw;
+	
 	}
 
 	.programsInfoTitle {
@@ -197,8 +180,13 @@
 /* for 710px */
 
 @media screen and (max-width: 710px) {
-	.programs {
-		height: 115vh;
+
+	.programsInfoItemContent {
+		width: 80%;
+	}
+
+	.programsWrap {
+		padding-bottom: 60px;
 	}
 
 	.programsInfoTitle {
@@ -232,17 +220,22 @@
 		font-size: 14px;
 		text-align: center;
 	}
+
+	.programsInfoItemIcon {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 }
 
 /* for 550px */
 
 @media screen and (max-width: 550px) {
-	.programs {
-		height: 100vh;
+
+	.programsWrap {
+		padding-bottom: 50px;
 	}
 
 	.programsInfoTitle {
-		
 		font-size: 24px;
 		margin: 15px auto 15px auto;
 		width: 385px;
@@ -274,19 +267,12 @@
 	}
 }
 
-/* for 480px */
-
-@media screen and (max-width: 480px) {
-	.programs {
-		height: 110vh;
-	}
-}
-
 /* for 420px */
 
 @media screen and (max-width: 420px) {
-	.programs {
-		height: 120vh;
+
+	.programsWrap {
+		padding-bottom: 40px;
 	}
 
 	.programsInfoTitle {
