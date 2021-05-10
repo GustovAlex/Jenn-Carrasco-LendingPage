@@ -3,7 +3,6 @@ import {useState, useEffect} from 'react'
 
 export default function Input ({isClickConfirm, className, defaultValue}) {
 	const [value, setValue] = useState(defaultValue)
-	console.log("isClickConfirm", isClickConfirm)
 
 	useEffect(() => {
 		if(isClickConfirm) {

@@ -11,8 +11,6 @@ export default function Navbar ({isActiveBurgerMenu, onClickSetIsActiveMenu}) {
 		{class: "navbarMenuItem", burgerClass: "navbarMenuItemBurger", href: "#contact", name: "Contact"}
 	]
 
-
-
 	return (
 		<div className="navbar">
 			<div className="navbarLogo">
@@ -22,7 +20,7 @@ export default function Navbar ({isActiveBurgerMenu, onClickSetIsActiveMenu}) {
 				{isActiveBurgerMenu ? <img className="iconCloseBurgerMenu" onClick={onClickSetIsActiveMenu} src={cancel} alt="cancel" /> : null}
 				{menuItems.map((item) => <a 
 				className={isActiveBurgerMenu ? item.burgerClass : item.class}
-				onClick={onClickSetIsActiveMenu}
+				onClick={isActiveBurgerMenu ? onClickSetIsActiveMenu : null}
 				href={item.href}
 				key={item.name}>
 					{item.name}
